@@ -1,6 +1,6 @@
 /* only small desktops */
 /* tablets */
-@media (min-width: 992px) and (max-width: 1190px) {
+/* @media (min-width: 992px) and (max-width: 1190px) {
 	.countdown{
 		height: 285px;
 	}
@@ -10,9 +10,9 @@
 	.lbox-details h2{
 		font-size: 26px;
 	}
-}
+} */
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
 	.top-header .navbar .navbar-collapse ul li a{
 		padding: 5px 15px;
 	}
@@ -46,10 +46,14 @@
 		width: 23%;
 		font-size: 24px;
 	}
+} */
+@media (min-width: 700px) {
+	.lbox-details{
+		padding: 12vw 0rem;
+	}
 }
-
 /* mobile or only mobile */
-@media (max-width: 767px) {
+@media (max-width: 510px) {
 	.navbar-brand{
 		margin-left: 10px;
 		margin-right: 10px;
@@ -118,12 +122,15 @@
 		background: rgba(0,0,0,0.9);
 	}
 	.countdown{
-		height: 188px;
+		/* height: 188px; */
 		border-radius: 0px;
 	}
 	.countdown #timer div{
-		width: 23%;
+		/* width: 23%; */
 		font-size: 24px;
+	}
+	.countdown{
+		max-width: 100%;
 	}
 	.about-m{
 		margin-bottom: 30px;

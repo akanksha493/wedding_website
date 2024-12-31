@@ -45,14 +45,14 @@ h3,
 h4,
 h5,
 h6 {
-    letter-spacing: 0;
+    /* letter-spacing: 0;
     font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
-    line-height: 120% !important;
+    line-height: 120% !important; */
     color: #1f1f1f;
-    margin: 0
+    /* margin: 0 */
 }
 
 h1 {
@@ -376,10 +376,10 @@ button:focus{
 
 .home-slider{
 	position: relative;
-	height: 100%;
+	height: min(100%, 100vh);
 }
 
-.lbox-caption {
+/* .lbox-caption {
     display: table;
     height: 100%;
     width: 100%;
@@ -391,19 +391,28 @@ button:focus{
     left: 0;
     right: 0;
 	z-index: 10;
-}
+} */
 
 .lbox-details {
-    display: table-cell;
+    /* display: table-cell; */
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 	position: absolute;
-	top: 0px;
+	top: 0;
 	left: 0;
 	right: 0;
 	height: 100%;
-	padding: 11% 0%;
+	padding: 5vw 0rem;
+	/* padding: 11% 0%; */
+	
 }
+/* .inner-container-countdown-and-etc{
+	position: absolute;
+	top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	z-index: 100;
+} */
 
 .lbox-details::before{
 	content: "";
@@ -425,13 +434,14 @@ button:focus{
 }
 
 .lbox-details h2{
-	font-size: 48px;
+	/* font-size: 48px; */
+	font-size: min(4.5vw, 48px);
 	color: #ffffff;
 	font-weight: 300;
 	position: relative;
 	z-index: 3;
 }
-.lbox-details p{
+/* .lbox-details p{
 	color: #ffffff;
 	position: relative;
 	z-index: 3;
@@ -440,8 +450,8 @@ button:focus{
 	color: #881228;
 	font-size: 40px;
 	font-family: 'Engagement', cursive;
-}
-.lbox-details a.btn{
+} */
+/* .lbox-details a.btn{
 	background: #63c7bd;
 	padding: 10px 20px;
 	font-size: 20px;
@@ -453,24 +463,28 @@ button:focus{
 }
 .lbox-details a.btn:hover{
 	background: #881228;
-}
-
+} */
 .countdown{
-	background: url(../images/ptn-bg.jpg);
-	background-size: cover;
+	/* background: url(../images/ptn-bg.jpg); */
+	background-color: whitesmoke;
+	/* background-size: cover; */
 	width: 100%;
-	height: 100%;
-	max-width: 550px;
-	height: 350px;
+	/* height: 100%; */
+	max-width: min(90vw, 550px);
+	/* height: min(250px, 40vw); */
 	margin: 0 auto;
 	position: relative;
 	z-index: 5;
 	border-radius: 20px 20px 20px 20px;
 }
-.countdown #timer div{
+.countdown #timer{
+	display: flex;
+	flex-direction: column;
+}
+.countdown #timer .count-down div{
 	display: inline-block;
 	background: #d69b7f;
-	width: 20%;
+	width: 22%;
 	color: #ffffff;
 	font-size: 38px;
 	box-shadow: inset 0 0 0 10px rgba(82,135,128,0.9), 0 1px 2px rgba(82,135,128,0.1);
@@ -480,26 +494,35 @@ button:focus{
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-
+.countdown #timer .date{
+	background: #890025;
+	padding: 1rem;
+	
+}
 .countdown #timer h3{
 	font-family: 'Engagement', cursive;
 	font-size: 38px;
 	color: #ffffff;
 	font-weight: normal;
-	padding: 0px;
-	padding-top: 28px;
-	padding-bottom: 17px;
-	background: #890025;
+	margin: 0;
+}
+#timer .date, #timer .count-down{
+	width: 100%;
+}
+.count-down{
+    display: flex;
+    justify-content: space-between;
+	padding: 1rem;
 }
 
-.countdown #timer div h6{
+/* .countdown #timer div h6{
 	color: #890025;
 	font-weight: 600;
 	font-size: 16px;
-}
+} */
 
 
-.countdown #timer div#days{
+/* .countdown #timer div#days{
 	position: absolute;
 	left: 0;
 	top: 90px;
@@ -517,7 +540,7 @@ button:focus{
 .countdown #timer div#seconds{
 	position: absolute;
 	bottom: 0px;
-}
+} */
 
 /*------------------------------------------------------------------
     About
