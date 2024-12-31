@@ -1078,7 +1078,7 @@ select.form-control:not([size]):not([multiple]){
 }
 
 .footer-box .footer-company-name{
-	text-align: center;
+	/* text-align: center; */
 	margin: 0px;
 	color: #ffffff;
 }
@@ -1090,6 +1090,14 @@ select.form-control:not([size]):not([multiple]){
 	color: #63c7bd;
 }
 
+.footer-box p{
+	color: white;
+	line-height: 1.5;
+	margin: 0;
+}
+.footer-box a{
+	color: lightskyblue;
+}
 
 
 
