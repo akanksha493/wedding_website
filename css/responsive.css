@@ -49,7 +49,7 @@
 } */
 @media (min-width: 700px) {
 	.lbox-details{
-		padding: 12vw 0rem;
+		padding: 20vw 0rem;
 	}
 }
 /* mobile or only mobile */
@@ -62,10 +62,10 @@
 		padding: 5px 15px;
 	}
 	.lbox-details h1{
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.lbox-details h2{
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.lbox-details p strong{
 		font-size: 20px;
