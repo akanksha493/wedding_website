@@ -1013,6 +1013,10 @@ button:focus{
 .event-inner a:hover{
 	background: #63c7bd;
 }
+.event-inner .timings{
+	text-align: left;
+
+}
 
 /*------------------------------------------------------------------
     Contact
@@ -1105,43 +1109,167 @@ select.form-control:not([size]):not([multiple]){
 	color: lightskyblue;
 }
 
+.footer-box .contacts-row{
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-between;
+	/* font-size: max(12px, 2vw); */
+}
+.footer-box .contact-heading{
+	font-size: 16px;
+	margin-bottom: 0.1rem;
+}
+.footer-box .column{
+	margin-bottom: 1rem;
+}
+
+.send-mssg-container{
+	text-align: center;
+	margin-top: 1rem;
+}
+.send-mssg-container button{
+	background-color: #881228;
+	color: white;
+	border: none;
+	padding: 0rem 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.send-mssg-container button:hover{
+	/* background-color: white;
+	color: #881228; */
+	/* font-size: 1.2rem; */
+}
+.send-mssg-container i{
+	margin-left: 1rem;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* * {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul > li:not(:last-child) {
+	margin-bottom: 24px;
+} */
+.bttn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.5rem 0;
+	margin-bottom: 1rem;
+}
+.bttn-container.-black {
+	background-color: #121212;
+}
+.bttn-container.-white {
+	background-color: white;
+}
+.bttn-container.-maroon {
+	background-color: #881228;
+}
+.button-fancy {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 16px 42px;
+	text-decoration: none;
+	position: relative;
+}
+.button-fancy > .arrow {
+	background-color: transparent;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	border-style: solid;
+	border-width: 2px;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	/* will-transform: translate; */
+	transform: translate(50%, -50%);
+	transition: transform 0.5s ease-in, right 0.5s ease-in-out, width 0.4s ease 0.3s, height 0.3s ease 0.3s, border-width 0.4s ease-in-out, background-color 0.2s ease-in, border-color 0.4s ease-in-out;
+}
+.button-fancy > .arrow:before, .button-fancy > .arrow:after {
+	background-color: transparent;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 0.2s;
+	transition-delay: 0;
+}
+.button-fancy > .arrow:before {
+	transform-origin: top right;
+}
+.button-fancy > .arrow:after {
+	transform-origin: bottom right;
+}
+.button-fancy:hover.-white > .arrow {
+	background-color: #fff;
+}
+.button-fancy:hover.-white > .arrow:before, .button-fancy:hover.-white > .arrow:after {
+	background-color: #fff;
+}
+.button-fancy:hover.-maroon > .arrow {
+	background-color: #8e0f22;
+}
+.button-fancy:hover.-maroon > .arrow:before, .button-fancy:hover.-maroon > .arrow:after {
+	background-color: #8e0f22;
+}
+.button-fancy:hover.-black > .arrow {
+	background-color: #555;
+}
+.button-fancy:hover.-black > .arrow:before, .button-fancy:hover.-black > .arrow:after {
+	background-color: #555;
+}
+.button-fancy:hover > .arrow {
+	height: 2px;
+	border-width: 0;
+	border-color: transparent;
+	width: 56px;
+	right: 0;
+	transform: translate(50%, -50%);
+	transition: transform 0.5s ease-in, right 0.5s ease 0.2s, width 0.4s ease, height 0.3s ease-in-out, border-width 0.3s ease-in-out, background-color 0.2s ease-in 0.3s, border-color 0.3s ease-in-out;
+}
+.button-fancy:hover > .arrow:before, .button-fancy:hover > .arrow:after {
+	width: 8px;
+	transition-delay: 0.4s;
+}
+.button-fancy:hover > .arrow:before {
+	transform: rotate(40deg);
+}
+.button-fancy:hover > .arrow:after {
+	transform: rotate(-40deg);
+}
+.button-fancy:hover > .text {
+	transform: translateX(-42px);
+	transition: transform 0.4s ease-in-out 0.2s;
+}
+.button-fancy.-white {
+	color: white;
+	border-color: white;
+}
+.button-fancy.-maroon {
+	color: #8e0f22;
+	border-color: #8e0f22;
+}
+.button-fancy.-black {
+	color: #555;
+	border-color: #555;
+}
+.button-fancy > .text {
+	display: block;
+	position: relative;
+	z-index: 100;
+	transition: transform 0.3s ease-in-out;
+}

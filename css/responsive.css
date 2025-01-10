@@ -138,4 +138,12 @@
 	.timeLine .row .item{
 		margin-bottom: 30px;
 	}
+	.footer-box .contacts-row{
+		/* font-size: max(12px, 3vw); */
+		flex-direction: column;
+		text-align: center;
+	}
+	.button-fancy {
+		font-size: min(10px, 5vw);
+	}
 }
