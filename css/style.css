@@ -1017,6 +1017,9 @@ button:focus{
 	text-align: left;
 
 }
+#events h2{
+	margin-bottom: 1.5rem;
+}
 
 /*------------------------------------------------------------------
     Contact
@@ -1272,4 +1275,7 @@ ul > li:not(:last-child) {
 	position: relative;
 	z-index: 100;
 	transition: transform 0.3s ease-in-out;
+}
+.typeform-bttn{
+	border: 1px solid white;
 }
